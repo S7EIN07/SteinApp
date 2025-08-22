@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stein_aplication/presentation/components/appBarComponent.dart';
 
 class TelaInicial extends StatefulWidget {
   const TelaInicial({super.key});
@@ -11,33 +12,9 @@ class _TelaInicialState extends State<TelaInicial> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'Stein Aprendizado',
-          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
-        ),
-        backgroundColor: Colors.blueAccent,
-        centerTitle: true,
-      ),
+      appBar: const CustomAppBar(),
       body: SingleChildScrollView(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            const SizedBox(height: 20),
-            Image.asset('assets/img/eye.png', width: 200, height: 200),
-            const SizedBox(height: 20),
-            const Text(
-              'Bem-vindo ao Stein Aprendizado!',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 10),
-            const Text(
-              'Sua jornada de aprendizado começa aqui.',
-              style: TextStyle(fontSize: 16),
-            ),
-          ],
-        ),
+        child: Center(child: Text("Bem-vindo ao Stein Aprendizado!")),
       ),
     );
   }

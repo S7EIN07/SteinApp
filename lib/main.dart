@@ -3,6 +3,10 @@ import './presentation/TelaInicial.dart';
 
 void main() {
   runApp(
-    MaterialApp(debugShowCheckedModeBanner: false, home: const TelaInicial()),
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: const TelaInicial(),
+      theme: ThemeData(fontFamily: 'JosefinSans'),
+    ),
   );
 }
