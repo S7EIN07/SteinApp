@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import './presentation/TelaInicial.dart';
+import 'package:stein_aplication/presentation/SplashScreen.dart';
 
 void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const TelaInicial(),
+      home: const SplashScreen(),
       theme: ThemeData(fontFamily: 'JosefinSans'),
     ),
   );
