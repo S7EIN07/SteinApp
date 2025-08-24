@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:rive/rive.dart';
+import 'TelaLogin.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -56,7 +57,12 @@ class _SplashScreenState extends State<SplashScreen> {
 
       setState(() {});
     } else {
-      print("Sequência de animações completa!");
+      debugPrint("Sequência de animações completa! Navegando...");
+
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const TelaLogin()),
+      );
     }
   }
 
