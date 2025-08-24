@@ -8,18 +8,6 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      leading: IconButton(
-        icon: Icon(
-          Icons.account_balance_wallet_outlined,
-          color: Color(0xFFFFC107),
-        ),
-        onPressed: () {
-          // Ação ao pressionar o ícone
-          ScaffoldMessenger.of(
-            context,
-          ).showSnackBar(SnackBar(content: Text('Ícone pressionado!')));
-        },
-      ),
       title: Row(
         children: [
           Text("$dinheiroPerfil", style: TextStyle(color: Color(0xFFFFC107))),
