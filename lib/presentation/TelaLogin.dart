@@ -13,7 +13,7 @@ class _TelaLoginState extends State<TelaLogin> {
     return Scaffold(
       backgroundColor: const Color(0xFFFFC107),
       body: Center(
-        child: Image.asset('assets/img/eye.png', width: 200, height: 200),
+        child: Text("Tela de Login", style: TextStyle(fontSize: 50)),
       ),
     );
   }
